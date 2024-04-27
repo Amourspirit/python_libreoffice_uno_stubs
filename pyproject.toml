@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "unostubs"
+version = "0.1.0"
+description = "Stubs for LibreOffice UNO files"
+authors = [":Barry-Thomas-Paul: Moss <4193389+Amourspirit@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/Amourspirit/python_libreoffice_uno_stubs"
+documentation = "https://github.com/Amourspirit/python_libreoffice_uno_stubs#README"
+repository = "https://github.com/Amourspirit/python_libreoffice_uno_stubs"
+packages = [
+    { include = "uno" },
+    { include = "unohelper" },
+    { include = "pyuno" }
+]
+keywords = ["ooodev", "libreoffice", "openoffice", "macro", "uno", "ooouno", "pyuno"]
+
+classifiers = [
+    "Topic :: Office/Business",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+
