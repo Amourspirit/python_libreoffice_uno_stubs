@@ -1,6 +1,6 @@
 [tool.poetry]
-name = "unostubs"
-version = "0.1.0"
+name = "api_unostubs"
+version = "0.2.0"
 description = "Stubs for LibreOffice UNO files"
 authors = [":Barry-Thomas-Paul: Moss <4193389+Amourspirit@users.noreply.github.com>"]
 license = "MIT"
@@ -9,9 +9,9 @@ homepage = "https://github.com/Amourspirit/python_libreoffice_uno_stubs"
 documentation = "https://github.com/Amourspirit/python_libreoffice_uno_stubs#README"
 repository = "https://github.com/Amourspirit/python_libreoffice_uno_stubs"
 packages = [
-    { include = "uno" },
-    { include = "unohelper" },
-    { include = "pyuno" }
+    { include = "uno", from = "src" },
+    { include = "unohelper", from = "src" },
+    { include = "pyuno", from = "src" }
 ]
 keywords = ["ooodev", "libreoffice", "openoffice", "macro", "uno", "ooouno", "pyuno"]
 
@@ -28,6 +28,10 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
 ]
 
+[[tool.poetry.source]]
+name = "pypi-test"
+url = "https://test.pypi.org/legacy/"
+priority = "supplemental"
 
 [tool.poetry.dependencies]
 python = "^3.8"
